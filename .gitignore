@@ -1,15 +1,31 @@
+# Archivos del sistema
+.DS_Store
+*.log
+*.hprof
+
+# Archivos del proyecto Android
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+*.apk
+*.ap_
+
+# Carpeta del IDE
+.idea/
+*.iws
+*.ipr
+
+# Configuración específica de usuario
+/.idea/caches/
+/.idea/libraries/
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+
+# Configuración de firma (si la usás)
+*.keystore

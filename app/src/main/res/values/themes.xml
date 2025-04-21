@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BocanegraKleyver_DA1_Tateti_App" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.BocanegraKleyver_DA1_Tateti_App" parent="Base.Theme.BocanegraKleyver_DA1_Tateti_App" />
+</resources>

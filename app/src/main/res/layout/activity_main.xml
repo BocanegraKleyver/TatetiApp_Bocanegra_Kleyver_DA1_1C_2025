@@ -17,17 +17,26 @@
 
     <EditText
         android:id="@+id/editTextName"
-        android:hint="Ingresa tu nombre"
+        android:hint="Ingresá tu nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/textSeleccionSimbolo"
+        android:text="Elegí tu símbolo:"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
 
     <RadioGroup
         android:id="@+id/radioGroupSymbol"
         android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp">
 
         <RadioButton
             android:id="@+id/radioX"
@@ -42,10 +51,71 @@
             android:layout_height="wrap_content" />
     </RadioGroup>
 
+    <TextView
+        android:id="@+id/textSeleccionDificultad"
+        android:text="Elegí dificultad de la máquina:"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupDificultad"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp">
+
+        <RadioButton
+            android:id="@+id/radioFacil"
+            android:text="Fácil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioNormal"
+            android:text="Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioDificil"
+            android:text="Difícil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textSeleccionTurno"
+        android:text="¿Quién comienza?"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTurno"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp">
+
+        <RadioButton
+            android:id="@+id/radioJugador"
+            android:text="Empiezo Yo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioCPU"
+            android:text="Empieza CPU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
     <Button
         android:id="@+id/buttonStart"
         android:text="Comenzar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp" />
+        android:layout_height="wrap_content" />
 </LinearLayout>

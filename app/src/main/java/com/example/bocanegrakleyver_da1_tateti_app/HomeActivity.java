@@ -21,7 +21,7 @@ public class HomeActivity extends AppCompatActivity {
 
         Button btnNuevoJuego = findViewById(R.id.btn_nuevo_juego);
         Button btnContinuar = findViewById(R.id.btn_continuar);
-        Button btnSalir = findViewById(R.id.btn_salir); // Nuevo botón salir
+        Button btnSalir = findViewById(R.id.btn_salir);
 
         btnNuevoJuego.setOnClickListener(new View.OnClickListener() {
             @Override

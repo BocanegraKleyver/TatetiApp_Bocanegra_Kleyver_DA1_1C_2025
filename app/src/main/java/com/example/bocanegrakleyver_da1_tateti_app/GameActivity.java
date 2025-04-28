@@ -30,13 +30,13 @@ public class GameActivity extends AppCompatActivity {
 
         statsManager = new StatsManager(this);
 
-        // Recibir datos
+
         nombreJugador = getIntent().getStringExtra("nombreJugador");
         simboloJugador = getIntent().getStringExtra("simboloJugador");
         dificultad = getIntent().getStringExtra("dificultad");
         turnoInicial = getIntent().getStringExtra("turnoInicial");
 
-        // Mostrar en pantalla
+
         TextView textNombre = findViewById(R.id.textNombre);
         TextView textSimbolo = findViewById(R.id.textSimbolo);
         textStats = findViewById(R.id.textStats);
@@ -57,7 +57,7 @@ public class GameActivity extends AppCompatActivity {
         Button btnMenu = findViewById(R.id.buttonMenu);
         btnMenu.setOnClickListener(v -> volverAlMenu());
 
-        // Si la CPU debe empezar
+
         if (turnoInicial != null && turnoInicial.equals("CPU")) {
             turnoJugador = false;
             new android.os.Handler().postDelayed(this::turnoMaquina, 300);

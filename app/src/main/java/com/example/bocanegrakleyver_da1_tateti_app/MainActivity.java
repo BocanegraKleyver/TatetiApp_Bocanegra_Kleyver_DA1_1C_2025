@@ -37,17 +37,17 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                // Capturar símbolo elegido
+
                 String simbolo;
                 int selectedSymbolId = radioGroupSymbol.getCheckedRadioButtonId();
 
                 if (selectedSymbolId == R.id.radioO) {
                     simbolo = "O";
                 } else {
-                    simbolo = "X"; // Por defecto
+                    simbolo = "X";
                 }
 
-                // Capturar dificultad elegida
+
                 String dificultad;
                 int selectedDificultadId = radioGroupDificultad.getCheckedRadioButtonId();
 
@@ -56,26 +56,26 @@ public class MainActivity extends AppCompatActivity {
                 } else if (selectedDificultadId == R.id.radioDificil) {
                     dificultad = "Dificil";
                 } else {
-                    dificultad = "Facil"; // Por defecto
+                    dificultad = "Facil";
                 }
 
-                // Capturar turno inicial elegido
+
                 String turnoInicial;
                 int selectedTurnoId = radioGroupTurno.getCheckedRadioButtonId();
 
                 if (selectedTurnoId == R.id.radioCPU) {
                     turnoInicial = "CPU";
                 } else {
-                    turnoInicial = "Jugador"; // Por defecto
+                    turnoInicial = "Jugador";
                 }
 
-                // Guardar en SharedPreferences
+
                 statsManager.guardarNombre(nombre);
                 statsManager.guardarSimbolo(simbolo);
                 statsManager.guardarDificultad(dificultad);
-                // (no hace falta guardar el turno inicial, solo lo enviamos)
 
-                // Ir a GameActivity
+
+
                 Intent intent = new Intent(MainActivity.this, GameActivity.class);
                 intent.putExtra("nombreJugador", nombre);
                 intent.putExtra("simboloJugador", simbolo);
